@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    double ax, ay, bx, by, px, py;
+    
+    cin >> ax >> ay >> bx >> by >> px >> py;
+    
+    double numerator = (bx - ax)*(py - ay) - (px - ax)*(by - ay);
+    double denominator = sqrt((bx - ax)*(bx - ax) + (by - ay)*(by - ay));
+    double distance = numerator / denominator;
+    
+    cout << fixed << setprecision(4) << distance << endl;
+
+    return 0;
+}
